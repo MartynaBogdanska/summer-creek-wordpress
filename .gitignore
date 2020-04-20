@@ -1,0 +1,8 @@
+# Exclude WordPress Understrap theme CSS and JS files
+/understrap/css/
+/understrap/js/
+
+# Hidden and data files
+/understrap/node_modules/
+
+/understrap/package-lock.json
