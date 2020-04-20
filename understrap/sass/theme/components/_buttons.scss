@@ -1,0 +1,94 @@
+/*---------------------------------------------------------------------------*\
+    #COMPONENTS > #BUTTONS
+\*---------------------------------------------------------------------------*/
+
+.btn {
+    border-radius: 0px;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    font-family: $font-family-heading;
+    min-width: 130px;
+}
+
+.btn-primary {
+    background-color: $primary;
+    border: 2px solid $primary;
+    &:hover {
+        background-color: darken($primary, 5%);
+    }
+}
+
+.nav-pills .nav-link {
+    border-radius: 0;
+}
+
+
+/** Blog search box button**/
+
+.submit {
+    padding: 0;
+}
+
+
+/** Blog Read More button **/
+
+.understrap-read-more-link {
+    background-color: transparent;
+    color: $black;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    &:hover {
+        color: $white;
+        background-color: #343a40;
+    }
+}
+
+
+/** Ninja Form plugin button **/
+
+.nf-form-content input[type=button] {
+    background-color: $primary !important;
+    border: 1px solid $primary !important;
+    padding: .5rem 1rem !important;
+    text-transform: uppercase !important;
+    font-family: $font-family-heading !important;
+    line-height: 1.8 !important;
+    &:hover {
+        background-color: darken($primary, 10%) !important;
+        color: $white !important;
+        cursor: pointer;
+    }
+}
+
+
+/** Weather dropdown button **/
+
+#months-weather-mobile {
+    button {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .dropdown-menu {
+        width: 100%;
+    }
+}
+
+
+/** Image gallery buttons **/
+
+.vp-filter__style-default .vp-filter__item.vp-filter__item-active>* {
+    color: $white;
+    cursor: pointer;
+    background-color: $primary;
+    border: 1px solid $primary;
+}
+
+.vp-filter__style-default .vp-filter__item>* {
+    color: $primary;
+    background-color: transparent;
+    border: 1px solid $primary;
+    font-family: $font-family-heading;
+    text-transform: uppercase;
+}

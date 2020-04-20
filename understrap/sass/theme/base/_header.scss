@@ -1,0 +1,151 @@
+/*----------------------------
+BASE > HEADER
+----------------------------*/
+
+#page-wrapper {
+    padding: 0;
+    #content {
+        padding-top: 1rem;
+        padding-bottom: 3rem;
+    }
+}
+
+.page-background-img {
+    h1 {
+        padding: 8% 15px;
+        font-family: $font-family-heading;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $white;
+    }
+    /** Default generic background image for pages **/
+    .page & {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/blog-bg.jpg") center center no-repeat;
+        background-size: cover;
+    }
+    /** Disabled background image for homepage **/
+    .home & {
+        display: none;
+    }
+    /** Background image for page: Blog **/
+    .blog & {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/blog-bg.jpg") center center no-repeat;
+        background-size: cover;
+    }
+    /** Background image for page: Indywidualnie **/
+    .page-id-51 & {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/indywidualne-bg.jpg") center 20% no-repeat;
+        background-size: cover;
+    }
+    /** Background image for page: Incentive **/
+    .page-id-54 & {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/incentive-bg.jpg") center center no-repeat;
+        background-size: cover;
+    }
+    /** Background image for page: O nas **/
+    .page-id-58 & {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/onas-bg.jpg") center center no-repeat;
+        background-size: cover;
+    }
+    /** Background image for page: Kontakt **/
+    .page-id-56 & {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/kontakt-bg.jpg") center center no-repeat;
+        background-size: cover;
+    }
+    /** Background image for page: Polityka Prywatności **/
+    .page-id-3 & {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/polityka-bg.jpg") center center no-repeat;
+        background-size: cover;
+    }
+    /** Background image for page: Grupowo **/
+    .page-id-11 &,
+    .page-id-80 & {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/grupowo-bg.jpg") center center no-repeat;
+        background-size: cover;
+    }
+    /** Background image for page: Grupowo > Tropikalne Queensland **/
+    .page-id-298 & {
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/queensland-bg.jpg") center center no-repeat;
+        background-size: cover;
+    }
+    /** Background image for page: Grupowo > Red Centre **/
+    .page-id-894 & {
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/uluru-bg.jpg") center center no-repeat;
+        background-size: cover;
+    }
+}
+
+
+/** Home Hero Image **/
+
+.parallax-hero {
+    height: 100vh;
+    max-height: 979px;
+    position: relative;
+    overflow: hidden;
+    margin-top: -60px;
+    z-index: -10;
+}
+
+.parallax-back-el {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/mountain2.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.parallax-main-el {
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    margin-top: -40px;
+    text-align: center;
+    color: $white;
+    @include media-breakpoint-down(sm) {
+        top: 35%;
+        margin-top: -35px;
+    }
+    h1 {
+        font-family: $font-family-serif;
+        font-size: 5rem;
+        text-transform: none;
+        margin-bottom: 1rem;
+        line-height: 1;
+        @include media-breakpoint-down(sm) {
+            font-size: 3.2rem;
+        }
+    }
+    h2 {
+        font-family: $font-family;
+        font-size: 1.5rem;
+        font-weight: $font-weight-light;
+        text-transform: none;
+        margin: 0;
+        @include media-breakpoint-down(sm) {
+            font-size: 1.1rem;
+        }
+        &:before {
+            display: none;
+        }
+    }
+}
+
+.parallax-fore-el {
+    background-image: url(../images/mountain1.png);
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 150px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}

@@ -1,0 +1,64 @@
+/*----------------------------
+BASE > SECTION
+----------------------------*/
+
+
+/**
+Trip types section
+**/
+
+#trip-types-section,
+#opera-background {
+    img {
+        max-height: 135px;
+    }
+}
+
+
+/** Philozophy section **/
+
+.philosophy {
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 100%);
+    min-height: 101px;
+    background-color: lighten($primary, 50%);
+}
+
+.philosophy-content {
+    background-color: lighten($primary, 50%);
+    img {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+
+/** Numbers section **/
+
+.numbers {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../images/image-number-background.jpg") center center no-repeat;
+    background-size: cover;
+    margin-bottom: -1rem;
+    #wpsm_counter_b_row_117 .wpsm_counterbox {
+        .wpsm_number {
+            font-family: $font-family-heading;
+        }
+        .wpsm_count-title {
+            margin-bottom: 0;
+            min-height: 0;
+        }
+    }
+}
+
+
+/** Testimonials section **/
+
+.sp-testimonial-free-wrapper {
+    margin-top: 3rem;
+    h2:before {
+        display: none;
+    }
+}
+
+.sp-testimonial-free-section .tfree-client-testimonial {
+    font-weight: $font-weight-light;
+}

@@ -1,0 +1,83 @@
+/*---------------------------------------------------------------------------*\
+    COMPONENTS > BLOG
+\*---------------------------------------------------------------------------*/
+
+
+/** 2-column layout overrides **/
+
+.blog {
+    .post {
+        display: inline-block;
+        clear: both;
+        margin-bottom: 2rem;
+    }
+    header.entry-header,
+    .entry-content,
+    footer.entry-footer {
+        float: right;
+        width: 65%;
+        position: relative;
+        h2.entry-title {
+            margin: 0;
+            font-size: 1.7rem;
+            text-transform: uppercase;
+            &:after {
+                display: none;
+            }
+        }
+        @include media-breakpoint-down(sm) {
+            width: 100%;
+        }
+    }
+    img.wp-post-image {
+        float: left;
+        width: 35%;
+        height: 350px;
+        object-fit: cover;
+        position: relative;
+        padding-right: 1rem;
+        @include media-breakpoint-down(sm) {
+            width: 100%;
+        }
+    }
+    .entry-meta {
+        .updated {
+            display: none;
+        }
+        .byline {
+            display: none;
+        }
+        &:after {
+            display: block;
+            content: '';
+            width: 100px;
+            height: 2px;
+            background: $primary;
+            margin: 0.5rem 0;
+        }
+    }
+}
+
+
+/** Blog Single Post overrides **/
+
+.single-post {
+    h1.entry-title {
+        margin: 0 0 1rem;
+        font-family: $font-family-heading;
+        text-transform: uppercase;
+        &:after {
+            display: block;
+            content: '';
+            width: 200px;
+            height: 3px;
+            background: $primary;
+        }
+    }
+    .wp-post-image {
+        margin: 0.5rem 0;
+    }
+    .updated {
+        display: none;
+    }
+}

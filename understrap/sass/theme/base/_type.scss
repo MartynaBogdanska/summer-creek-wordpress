@@ -1,0 +1,60 @@
+/*---------------------------------------------------------------------------*\
+    BASE > TYPE
+\*---------------------------------------------------------------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h4,
+h6 {
+    font-family: $font-family-heading;
+    font-weight: $font-weight;
+    text-transform: uppercase;
+    position: relative;
+    line-height: 1.5;
+    z-index: 1;
+}
+
+h2 {
+    margin: 3rem 0 2rem 0;
+    &:nth-child(1) {
+        margin-top: 1rem;
+    }
+    &:after {
+        display: block;
+        content: '';
+        width: 200px;
+        height: 2px;
+        background: $primary;
+    }
+    .home &:before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        height: 0;
+        width: 200px;
+        border-bottom: 3px solid $primary;
+        transform: translate(-50%, 15px);
+    }
+    .home &:after {
+        display: none;
+        ;
+    }
+}
+
+h3 {
+    margin: 2rem 0 1rem 0;
+}
+
+
+/** Utilities **/
+
+.text-heading {
+    font-family: $font-family-heading;
+}
+
+.text-serif {
+    font-family: $font-family-serif;
+}

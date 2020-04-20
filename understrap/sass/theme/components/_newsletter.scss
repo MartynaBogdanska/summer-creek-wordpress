@@ -1,0 +1,59 @@
+/*---------------------------------------------------------------------------*\
+    COMPONENTS > NEWSLETTER
+\*---------------------------------------------------------------------------*/
+
+
+/** Newsletter plugin overwrites in Polish **/
+
+.tnp-widget-minimal {
+    &:before {
+        content: "Dowiedz się pierwszy o nadchodzących wyprawach oraz o rabatach na wyjazdy.\A \A";
+        white-space: pre-wrap;
+    }
+    &:after {
+        content: "\A Twoje dane wykorzystujemy wyłącznie w celach informacyjnych. Nikomu ich nie odsprzedajemy. Z newslettera możesz wypisać się w kadej chwili.";
+        white-space: pre-wrap;
+    }
+    .tnp-form {
+        input.tnp-email {
+            padding: 5px 10px;
+            margin-bottom: 10px;
+            border: none;
+            background-color: #ffffff59;
+            color: $white;
+            &::placeholder {
+                color: $white;
+            }
+        }
+        input.tnp-submit {
+            padding: 10px;
+            border: 1px solid $white;
+            background-color: transparent;
+            color: $white;
+            font-size: $font-size;
+            font-family: $font-family-heading;
+            border-radius: 0px;
+            text-transform: uppercase;
+            transition: .15s;
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.1)
+            }
+        }
+    }
+}
+
+
+/** Newsletter plugin overwrites in English **/
+
+.page-id-77 {
+    .tnp-widget-minimal {
+        &:before {
+            content: "Be the first one who finds out about new trips and adventures.\A \A";
+            white-space: pre-wrap;
+        }
+        &:after {
+            content: "\A All  the data are used only for information purposes. We don't sell them and you can opt-out anytime. ";
+            white-space: pre-wrap;
+        }
+    }
+}

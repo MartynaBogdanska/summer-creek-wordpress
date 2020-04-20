@@ -1,0 +1,49 @@
+/*---------------------------------------------------------------------------*\
+    COMPONENTS > FORM
+\*---------------------------------------------------------------------------*/
+
+
+/** Ninja Form style overrides **/
+
+.nf-form-content {
+    padding: 5px 0 !important;
+    input:not([type=button]) {
+        height: 40px !important;
+        background: $white !important;
+        font-size: 0.8rem !important;
+        color: $black !important;
+    }
+    textarea {
+        background: $white !important;
+        font-size: 0.8rem !important;
+        color: $black !important;
+    }
+    label {
+        font-size: 1rem !important;
+    }
+}
+
+.nf-field {
+    width: 90%;
+}
+
+.nf-field-label {
+    width: 15% !important;
+}
+
+.nf-field-description {
+    font-size: 0.8rem !important;
+    .label-right & {
+        margin: 0 !important;
+    }
+}
+
+.nf-field-element:after {
+    height: 39px !important;
+    width: 39px !important;
+    line-height: 42px !important;
+}
+
+.nf-pass.field-wrap .nf-field-element:after {
+    right: -5px !important;
+}
